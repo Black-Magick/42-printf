@@ -6,7 +6,7 @@
 /*   By: remanuel <remanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 10:30:03 by remanuel          #+#    #+#             */
-/*   Updated: 2022/11/24 12:39:31 by remanuel         ###   ########.fr       */
+/*   Updated: 2022/11/24 15:21:16 by remanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,15 @@ void	n_putstr(char *str, int *len)
 {
 	size_t	index;
 
-	index = 0;
 	if (!str)
 	{
 		write(1, "(null)", 6);
 		*len += 6;
 	}
-	while (*str)
+	else
 	{
-		n_putchar(str[index], len);
-		index++;
+		index = 0;
+		while (str[index])
+			n_putchar(str[index++], len);
 	}
 }
