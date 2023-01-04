@@ -6,7 +6,7 @@
 /*   By: remanuel <remanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 11:47:43 by remanuel          #+#    #+#             */
-/*   Updated: 2022/11/24 16:05:06 by remanuel         ###   ########.fr       */
+/*   Updated: 2023/01/04 09:32:07 by remanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,12 +55,3 @@ int	ft_printf(const char *str, ...)
 	va_end(arguments);
 	return (len);
 }
-
-/*int	main()
-{
-	//a = 13465456;
-	//char *str = "PUTA!";
-	ft_printf(" %x %x %x %x %x %x %x\n", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
-	printf(" %x %x %lx %lx %lx %x %x\n", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
-	return (0);
-}*/
